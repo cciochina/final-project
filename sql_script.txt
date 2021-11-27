@@ -1,19 +1,12 @@
 # SQL code to use with pgAdmin
 
-CREATE TABLE f1_df (
-    year INT,
-    driverId INT,
-    constructorid INT,
-    forename VARCHAR,
-    surname VARCHAR,
-    nationality VARCHAR,
-    points NUMERIC
+CREATE TABLE F1 (
+	id SERIAL primary key,
+	year INT,
+	name VARCHAR,
+	nationality varchar,
+	constructorid int,
+	points numeric	
+	
 );
-
-CREATE TABLE c1_df (
-    year INT,
-    constructorid INT,
-    constr_name VARCHAR,
-    nationality VARCHAR,
-    points NUMERIC
-);
+select * from f1
